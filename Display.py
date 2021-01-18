@@ -4,41 +4,21 @@ from tkinter import messagebox as msg
 from tkinter.ttk import Notebook
 from tkinter import filedialog
 from tkinter import ttk
-#import platform
-#import ImgViewer.imgview as IV #(1)
+
 import FrameViewer.frameView as FV #(2)
-#import TestItems.Test_Spec as TS #(3)
-#import Sending_API_MQTT.Sending_API_MQTT as SAM #(4)
-#import runServerandDevice.ServerDevice as SD #(5)
-#import CtrlPanel.ControlPanel as CP #(6)
-#import CtrlPanel.ColorDraw as CD #(7)
-#import SearchDocs.SearchDocs as SearDoc #(8)
-##import Translation.Translator as Tran #(9)
-#import SearchSceneMark.SearchSceneMark as SearSM #(10)
-#import SearchVideo.SearchVideo as SearV #(11)
-#import aws_rekognition.rekognition as AWSRK #(12)
-#import OpenALPR.OpenALPR as ALPR #(13)
-#import Dlib_Function.Dlib_ImageFunction as Dlib_Img #(14)
-#import Dlib_Function.Dlib_FrameFunction as Dlib_Frame #(15)
-#import OpenCVFunction.imageSelectiveSearch as iSS #(16)
-#import OpenCVFunction.imagehaarcascade as imghaar #(17)
-#import OpenCVFunction.frameOpenCVFunction as frameOpenCV #(18)
-#import OCR.tesserectOCR as tesserect #(19)
-#import JsonViewer.JsonViewer as JV #(20)
-#import ColorPalette.ColorPalette as clrP #(21)
+
 
 import tkinter.messagebox as tkmsg
 from PIL import Image, ImageTk, ImageDraw, ExifTags, ImageColor,ImageFont
-#from pdf2image import convert_from_path, convert_from_bytes
-#from pdf2image.exceptions import PDFInfoNotInstalledError,PDFPageCountError,PDFSyntaxError
+
 import tempfile
 from glob import glob
 import glob
-#import ffmpeg
+
 import os
 from os.path import splitext
 import platform
-#import subprocess
+
 
 
 class TestTool(tk.Tk):
@@ -46,9 +26,7 @@ class TestTool(tk.Tk):
         super().__init__()
 
         self.title("Test Tool Platform:"+str(platform.system()))        
-        #self.NICE_wallpaper = tk.PhotoImage(file = "icons/pr6-01.png")
-        #self.NICE_logo = tk.PhotoImage(file = "icons/1002nice_logo_full_light.png")
-        #self.Allion_logo = tk.PhotoImage(file = "icons/logo_footer.png")
+
         w = 1000 # width for the Tk root
         h = 800 # height for the  Tk root
 
@@ -63,10 +41,6 @@ class TestTool(tk.Tk):
         # set the dimensions of the screen 
         # and where it is placed
         self.geometry('%dx%d+%d+%d' % (w, h, x, y))
-        #self.geometry("1440x1020")
-
-        #self.init_menubar()
-        #if platform.system() == "Windows": self.iconbitmap('icons\\screen_webcam_web_camera_icon_148791.ico')
 
         '''self.notebook'''
         self.notebook = Notebook(self)
